@@ -5,14 +5,17 @@ import android.graphics.drawable.Drawable;
 import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.widget.ImageView;
 
 import com.koushikdutta.ion.Ion;
 
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
 public class MainActivity extends AppCompatActivity {
-    
+
+    @BindView(R.id.image) ImageView mImageView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -24,6 +24,7 @@ public class InstaAdapter extends RecyclerView.Adapter<InstaAdapter.MyViewHolder
         mFeed = feed;
     }
 
+
     @Override
     public MyViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         LayoutInflater inflater = LayoutInflater.from(parent.getContext());

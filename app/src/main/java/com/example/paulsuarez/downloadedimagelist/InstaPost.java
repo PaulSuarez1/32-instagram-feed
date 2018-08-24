@@ -5,12 +5,12 @@ import java.util.List;
 
 public class InstaPost {
 
-    public String author;
+    public String title;
     public String imageUrl;
     public String description;
 
-    public InstaPost(String author, String description, String url) {
-        this.author = author;
+    public InstaPost(String title, String description, String url) {
+        this.title = title;
         this.description = description;
         this.imageUrl = url;
     }

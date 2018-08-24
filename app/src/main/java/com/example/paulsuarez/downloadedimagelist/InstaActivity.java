@@ -9,7 +9,6 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 
 public class InstaActivity extends AppCompatActivity {
-
     @BindView(R.id.recycler) public RecyclerView mRecyclerView;
     private LinearLayoutManager mLinearLayoutManager;
     private InstaAdapter mInstaAdapter;

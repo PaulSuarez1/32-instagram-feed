@@ -12,6 +12,7 @@ import butterknife.ButterKnife;
 import butterknife.OnClick;
 
 public class MainActivity extends AppCompatActivity {
+    
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,5 +45,37 @@ public class MainActivity extends AppCompatActivity {
                 .load(imageUri.toString());
     }
 
+    @OnClick(R.id.loadImage)
+    public void loadImage() {
+        String url = "http://www.encryptnode.com/img/about/logo.png";
+        Uri uri = Uri.parse(url);
+
+        Ion.with(this)
+                .load(uri.toString())
+                .withBitmap()
+                .placeholder(R.drawable.loading)
+                .error(R.drawable.placeholder)
+                .intoImageView(mImageView);
+    }
+
+
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

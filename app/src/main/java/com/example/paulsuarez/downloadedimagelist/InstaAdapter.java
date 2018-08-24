@@ -12,7 +12,7 @@ import com.koushikdutta.ion.Ion;
 import java.util.ArrayList;
 import java.util.List;
 
-public class InstaAdapter {
+public class InstaAdapter extends RecyclerView.Adapter<InstaAdapter.MyViewHolder> {
 
     private List<InstaPost> mFeed;
 
